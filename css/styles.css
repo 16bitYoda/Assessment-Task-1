@@ -1,0 +1,519 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+/* ______________________________________________________________________Font properties */
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 16px;
+  width: 100%;
+}
+
+h3 {
+  font-size: 14px;
+ }
+
+
+a,
+p,
+li,
+table, 
+form {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+/* ____________________________________________________________Body & Section properties */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E7ECEF;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 100vh;
+  width: 80vw;
+  padding: 0 5%;    
+  background-color: white;
+  margin: 40px;
+  border-radius: 20px;
+}
+/* ______________________________________________________________________________Header */
+
+header {
+  width: 100%;
+  background-color: #274C77;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 1.8em;}
+
+.navbar-links {list-style: none;
+  font-weight: bold;
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: .6rem .7rem;
+}
+ 
+.navbar-links a:hover {
+  background-color: #36577c;
+  font-size: 1.1rem;
+  border-radius: 50px;
+}
+
+.navbar-links a:focus {
+  background-color: #36577c;
+}
+
+.navbar-links a:active {
+  text-decoration: underline;
+}
+
+.navbar-links a:visited {
+  color: #ffffff;
+}
+
+
+
+.toggle-button {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* ______________________________________________________________________________Header Image */
+
+#header-image {
+  background-image: url("/images/header_background.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0;
+  margin: 0;
+}
+
+#header-image h2 {
+  display: flex;
+  align-items: center;
+  width: 40vw;
+  height:40vw;
+  font-size: 4em;
+  padding-left: 10rem;
+  color: #274C77;
+  text-align: left;
+
+}
+/* ______________________________________________________________________________About */
+
+
+
+#about-us h2 {
+  font-size: 2em;
+  padding: 2rem 0;
+}
+
+#about-us img {
+  width: 40%;
+  padding: 3rem;
+}
+
+#about-us aside {
+  display: flex;
+  width: 40%;
+  padding: 2rem;  
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #000000;
+}
+
+#about-us p {
+  font-size: 1.3em;
+}
+
+/* ______________________________________________________________________________Services */
+
+#services {
+  background-image: url("/images/services_background_img.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  border-radius: 0;
+  margin: 0;
+}
+
+#services h2 {
+  color: white;
+  font-size: 2em;
+  padding: 1rem 0;}
+
+#services div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  height: 60vh;
+  background-color: #ffffffd8;
+  box-shadow: 0 0 20px #000000;
+  border-radius: 20px;
+  text-align: left;
+  padding: 2rem;
+  }
+
+  .services-img { 
+    border-radius: 15px;
+    height: 300px; 
+    box-shadow: 0 0 20px black;
+  }
+  
+ #services ul {
+  list-style: disc;
+  padding-top: 5rem;
+ }
+
+ #services ul li { font-size: 1.1em;
+}
+
+
+
+
+
+/* ______________________________________________________________________________Contact Us */
+
+#contact-us h2 {
+  font-size: 2em;
+  padding: 2rem 0;
+}
+
+#map-details {
+  width: 90%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #E7ECEF;
+  border-radius: 10px;
+}
+
+iframe {
+  width: 50%;
+  height: 40vh;
+  border: 0;
+}
+
+#contact-us aside {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+#contact-us p {font-size: 1em;}
+
+#trading-hours {
+  font-size: 1em;
+  border-spacing: 20px 10px;
+}
+
+
+#form {
+  width: 40%;
+  padding: 2rem 0;
+}
+
+label {
+  display: block;
+  margin-bottom: .7rem;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: .9em;
+  width: 100%;
+  padding: .7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  }
+
+#message {font-family: "Open Sans", sans-serif;
+  font-size: .9em;
+font-style: italic;}
+
+input[type="submit"] {
+  font-size: 1em;
+  background-color: #274c77;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: .6rem 1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #2d5787;
+  transform: scale(1.1);
+}
+
+input[type="submit"]:active {
+  background-color: #2d5787;
+  text-decoration: underline;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+textarea {
+  height: 15rem;
+}
+
+/* ______________________________________________________________________________Footer */
+footer {display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #274C77;
+  color: #ffffff;
+  height: 10vh;
+  
+}
+
+footer p {
+  padding-top: 1rem;
+}
+
+/* ______________________________________________________________________________Media */
+
+@media screen and (max-width: 900px) {
+  
+  section {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  header {
+    background-color: #274C77;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: #ffffff;
+  }
+
+  h2 {color: #274C77;}
+
+  .toggle-button {
+    display: flex;
+  }
+
+  header nav {
+    display: none;
+    width: 100%;
+    padding-top: 1rem;
+    flex-direction: column;
+  } 
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header nav ul li {
+    text-align: center;
+    padding: .5rem 1rem;
+  }
+
+  header nav.active {display: flex;}
+
+  #header-image {
+    background-image: url("/images/header_background.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    align-items: center;
+  }
+
+  #header-image h2 {
+
+    width: 40%;
+    font-size: 1.3em;
+    padding: 1rem 0;
+    padding-left: 2rem;
+    color: #274C77;
+    text-align: center;
+  
+  }
+
+  #about-us {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 10%;
+    background-color: #E7ECEF; 
+  }
+  
+  #about-us h2 {
+    width: 90%;
+    font-size: 1.4em;
+    padding: 2rem 0;
+    border-top: #274C77 solid;
+
+  }
+  
+  #about-us img {
+    width: 100%;
+    padding: 1.2rem;
+  }
+  
+  #about-us aside {
+    display: flex;
+    width: 90%;
+    padding: 1rem;  
+    text-align: center;
+    background-color: white;
+    border-radius: 0;
+    box-shadow: none;
+
+  }
+  
+  #about-us aside p {
+    font-size: 1em;
+  }
+ 
+  #services {
+    height: fit-content;
+    padding: 20px;
+    background-image: none;
+    background-color: #E7ECEF;
+  } 
+
+  #services h2 {
+  font-size: 1.4em;
+  padding: 2rem 0;
+  color: #274C77;
+  border-top: #274C77 solid;
+
+  }
+
+  #services div {
+  height: fit-content;
+  width: 100%;
+  /* margin-top: 20px; */
+  border-radius: 0px;
+  box-shadow: none;
+  }
+
+  .services-img { 
+    border-radius: 15px; 
+    box-shadow: none;
+  }
+
+  #services li {
+  font-size: 1em;
+  }
+
+ #contact-us {
+  height: fit-content;
+  background-color: #E7ECEF;
+}
+
+#contact-us h2 {
+  font-size: 1.3em;
+  border-top: #274C77 solid;
+  padding: 2rem 0;
+
+}
+
+#map-details {display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: white;
+border-radius: 0;}
+
+iframe {width: 90%;
+height: auto;
+border-style: solid;
+padding-bottom: 20px;
+}
+
+#map-details aside {font-size: 1em;
+border-radius: 0;
+box-shadow: none;}
+
+#form {
+  padding-top: 5rem;
+  width: 90%;
+text-align: center;
+}
+
+footer {height: fit-content;}
+
+}
