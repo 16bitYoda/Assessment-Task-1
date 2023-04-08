@@ -133,7 +133,7 @@ h1 {
 /* ______________________________________________________________________________Header Image */
 
 #header-image {
-  background-image: url("https://16bityoda.github.io/Assessment-Task-1/images/header_background.png");
+  background-image: url("/images/header_background.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -186,7 +186,7 @@ h1 {
 /* ______________________________________________________________________________Services */
 
 #services {
-  background-image: url("https://16bityoda.github.io/Assessment-Task-1/images/services_background_img.jpg");
+  background-image: url("/images/services_background_img.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -205,7 +205,7 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 35vw;
-  height: 60vh;
+  height: fit-content;
   background-color: #ffffffd8;
   box-shadow: 0 0 20px #000000;
   border-radius: 20px;
@@ -219,10 +219,16 @@ h1 {
     box-shadow: 0 0 20px black;
   }
   
- #services ul {
+  .services-list {
+    height: 350px;
+    list-style: disc;
+    padding-top: 3rem;
+  }
+
+ /* #services ul {
   list-style: disc;
   padding-top: 5rem;
- }
+ } */
 
  #services ul li { font-size: 1.1em;
 }
@@ -240,6 +246,7 @@ h1 {
 
 #map-details {
   width: 90%;
+  height: 45vh;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
@@ -249,7 +256,7 @@ h1 {
 
 iframe {
   width: 50%;
-  height: 40vh;
+  height: 100%;
   border: 0;
 }
 
@@ -260,6 +267,7 @@ iframe {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 2rem;
   
 }
 
@@ -296,7 +304,8 @@ textarea {
 
 #message {font-family: "Open Sans", sans-serif;
   font-size: .9em;
-font-style: italic;}
+font-style: italic;
+height: 10vh;}
 
 input[type="submit"] {
   font-size: 1em;
@@ -337,7 +346,7 @@ footer {display: flex;
   width: 100%;
   background-color: #274C77;
   color: #ffffff;
-  height: 10vh;
+  height: fit-content;
   
 }
 
@@ -390,7 +399,7 @@ footer p {
   header nav.active {display: flex;}
 
   #header-image {
-    background-image: url("https://16bityoda.github.io/Assessment-Task-1/images/header_background.png");
+    background-image: url("/images/header_background.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -440,7 +449,7 @@ footer p {
     background-color: white;
     border-radius: 0;
     box-shadow: none;
-
+    font-size: 1em;
   }
   
   #about-us aside p {
@@ -475,7 +484,7 @@ footer p {
     box-shadow: none;
   }
 
-  #services li {
+  .services-list {height: fit-content;
   font-size: 1em;
   }
 
@@ -495,6 +504,7 @@ footer p {
 flex-direction: column;
 justify-content: center;
 align-items: center;
+height: fit-content;
 background-color: white;
 border-radius: 0;}
 
@@ -506,7 +516,14 @@ padding-bottom: 20px;
 
 #map-details aside {font-size: 1em;
 border-radius: 0;
-box-shadow: none;}
+box-shadow: none;
+padding: 2rem 0;}
+
+#trading-hours {padding-top: 2rem;
+  border-spacing: 40px 5px;}
+
+#trading-hours td {width: 100%;
+}
 
 #form {
   padding-top: 5rem;
