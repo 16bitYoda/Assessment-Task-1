@@ -347,7 +347,7 @@ footer p {
 }
 
 /* ______________________________________________________________________________Media Laptop */
-@media screen and (max-width: 1024px) and (max-height: 768px) {
+@media screen and (max-width: 1540px) and (max-height: 720px) {
   
   h2 {color: #274C77;}
 
