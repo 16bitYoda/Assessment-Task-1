@@ -137,7 +137,7 @@ h1 {
 /* ______________________________________________________________________________Header Image */
 
 #header-image {
-  background-image: url("/images/header_background.png");
+  background-image: url("https://16bityoda.github.io/Assessment-Task-1/images/header_background.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -185,7 +185,7 @@ h1 {
 /* ______________________________________________________________________________Services */
 
 #services {
-  background-image: url("/images/services_background_img.jpg");
+  background-image: url("https://16bityoda.github.io/Assessment-Task-1/images/services_background_img.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -352,7 +352,7 @@ footer p {
   h2 {color: #274C77;}
 
   #header-image {
-    background-image: url("/images/header_background.png");
+    background-image: url("https://16bityoda.github.io/Assessment-Task-1/images/header_background.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -549,7 +549,7 @@ footer p {
   h2 {color: #274C77;}
 
   #header-image {
-    background-image: url("/images/header_background.png");
+    background-image: url("https://16bityoda.github.io/Assessment-Task-1/images/header_background.png");
     background-size: cover;
     background-position: center;
     display: flex;
