@@ -356,7 +356,7 @@ footer p {
 
 /* ______________________________________________________________________________Media */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1080px) {
   
   section {
     width: 100%;
