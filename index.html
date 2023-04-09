@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>ABC Optical - Family Opthalmologist</title>
+    <meta name="description" content="ABC Optical, Family Opthalmologist">
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link rel="stylesheet" type="text/css" href="./css/styles.css" >
@@ -22,13 +23,13 @@
       <h1>ABC Optical</h1>
       
       <!-- ".toggle-button" is the hamburger menu for mobile layouts -->
-      <a href="#" class="toggle-button" aria-label="Open Navigation Menu">
+      <a href="#" class="toggle-button" aria-label="Main Navigation">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </a>
       
-      <nav class="navbar-links">
+      <nav class="navbar-links" aria-label="Main Navigation">
         <ul>
           <li><a href="#about-us">About</a></li>
           <li><a href="#services">Services</a></li>
@@ -82,7 +83,7 @@
       <div>
           <img class="services-img"
           src="./images/services_img_1.jpg"
-          alt="Doctor performing an eye test on a patient">
+          alt="Specialist performing an eye test on a patient">
           
           <ul class="services-list">
             <li>Eye Examinations (may be bulk-billed)</li>
@@ -103,7 +104,7 @@
         <div>
           <img class="services-img"
           src="./images/services_img_2.jpg"
-          alt="Doctor performing an eye test on a patient">
+          alt="Specialist performing an eye test on a young patient">
           
           <ul class="services-list">
             <li>Focusing ability (Presbyopia)</li>
@@ -133,6 +134,7 @@
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
+        aria-label="A link to googme maps, for directions to store"
         ></iframe>
       
 
@@ -140,7 +142,7 @@
           <p>
             Visit us at The Myer Centre in the Queen Street Mall on Level 1,
             Shop number 36.<br >
-            Or give us a call on: &#9742; <a href="tel:+61732567101">07 3256 7101</a>.
+            Or give us a call on: &#9742; <a href="tel:+61732567101" aria-label="ABC Optical's phone number. Press to call">07 3256 7101</a>.
           </p>
           <br >
           <p>Our trading hours are:</p>
@@ -179,21 +181,21 @@
         </aside>
       </div>  
         
-
-      <div id="form">
+      <div id="form" role="form">
         <form action="#" method="post">
           <label for="name">Your name:</label>
-          <input type="text" id="name" name="name" required >
-
+          <input type="text" id="name" name="name" aria-labelledby="name" required>
+      
           <label for="email">&#128231; Email:</label>
-          <input type="email" id="email" name="email" required >
-
+          <input type="email" id="email" name="email" aria-labelledby="email" required>
+      
           <label for="message">&#128233; Enquiry:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <input type="submit" value="Submit" >
+          <textarea id="message" name="message" aria-labelledby="message" required></textarea>
+      
+          <input type="submit" value="Submit" aria-label="Submit">
         </form>
       </div>
+      
     </section>
     <!-- __________________________________________________________________________________________________________________________________Footer -->
     <footer>
